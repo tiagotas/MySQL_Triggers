@@ -1,0 +1,26 @@
+
+ALTER TABLE tabela MODIFY campo VARCHAR(20) NOT NULL;
+
+ALTER TABLE tabela MODIFY campo VARCHAR(255) NOT NULL SET DEFAULT 'VALOR';
+
+ALTER TABLE tabela MODIFY campo_data DATE SET DEFAULT (DATE_FORMAT(NOW(), '%Y-%m-%d'));
+
+
+
+
+ALTER TABLE tabela ADD COLUMN telefone VARCHAR(15) AFTER nome;
+
+ALTER TABLE tabela DROP COLUMN telefone;
+
+Renomar Tabela:
+ALTER TABLE tabela RENAME TO tabela_renomeada;
+
+Renomear Coluna:
+ALTER TABLE tabela RENAME COLUMN coluna TO coluna_renomeada;
+
+
+
+
+
+
+
